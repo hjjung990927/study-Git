@@ -1,0 +1,37 @@
+팀원 기준~
+// pull 받고 push 하는걸 꼭 기억하자 //
+팀장: 자~ 다들 들어오세요!
+-> 들어가면 !!!!!!!포크부터!!!!!!!
+git clone (포크받은 레포지토리 URL) .
+-> 내가 열어둔 폴더에 넣기
+-> 브랜치에서 작업 후 마스터에서 merge하고 보내는 법
+git checkout -b origin(하고싶은 브랜치명)
+-> origin(하고싶은 브랜치명) 서버로 옮겼으니 다시 메모장 생성 후 작성
+git add .
+git commit -m "init"
+git remote add origin(하고싶은 브랜치명) https://github.com/hjjung990927/...(내 URL)
+git checkout master
+-> 마스터에서 merge하고 보낼거니까 옮기기
+git merge origin(하고싶은 브랜치명)
+git push -u origin(하고싶은 브랜치명) master
+안되면 그냥 git push
+-> 팀장에게 pr 보내기
+
+
+-----------------------------------------------------------------
+브랜치 확인
+git branch
+
+브랜치 삭제하기
+git branch -d 삭제 할 브랜치명
+
+
+git commit -m "내가 하고 있는 제목 #이슈번호"
+
+다 하면
+
+git commit -m "내가 하고 있는 제목 close #이슈번호"
+
+바로 직전에(현재 커밋의 바로 직전 커밋) 잘못한 커밋을 취소하기
+git reset --soft HEAD~1
+-----------------------------------------------------------------

@@ -1,0 +1,26 @@
+팀장 기준~
+git init
+-> .git 만들기
+-> 메모장 생성 후 작성
+git add .
+git commit -m "init"
+git remote add team(팀명) https://github.com/team/...(팀 URL)
+git push (팀명) master
+--------------------------- 팀 저장소 배포 성공! ---------------------------
+---------------------- 성공 했으니까 !!!!!!!포크!!!!!!! ----------------------
+팀장도 같이 브랜치로 만들기~
+git checkout -b origin(하고싶은 브랜치명)
+-> origin(하고싶은 브랜치명) 서버로 옮겼으니 다시 메모장 생성 후 작성
+git add .
+git commit -m "updated init"
+git remote add origin(하고싶은 브랜치명) https://github.com/hjjung990927/...(내 URL)
+-> 돌아가서
+git checkout master
+git merge origin(하고싶은 브랜치명)
+git push -u origin(하고싶은 브랜치명) master
+
+팀장도 pull 받고 master에서
+git pull
+
+
+
